@@ -1,0 +1,15 @@
+---
+-  hosts: dbserver
+   become_user: root
+   become_method: sudo
+   tasks:
+    - name: copy a configuration file
+      copy:
+        src: /root/test1
+        dest: /home/ansible
+    
+    - name: yum update
+      yum:
+        name: vsftpd
+        state: present
+
