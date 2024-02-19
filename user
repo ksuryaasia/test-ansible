@@ -5,4 +5,5 @@
   tasks:
    - name: Create a new user
      user: 
-     name: Jack
+       name: Jack
+       state: present
