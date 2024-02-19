@@ -7,3 +7,7 @@
      user: 
        name: Jack
        state: present
+   - name: create user Khaja
+     user:
+       name: Khaja
+       state: present
